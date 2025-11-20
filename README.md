@@ -2,9 +2,6 @@
 
 This is the official code repository for the paper **"To Survive, I Must Defect": Jailbreaking LLMs via Game-Theoretic Scenarios.**
 
-> ⚠️ **Research & Safety Notice**  
-> This repository is provided **for research, red-teaming, and harmful content**. Do not deploy for misuse or to intentionally circumvent safety systems in production models.
-
 > **Abstract.** As large language models (LLMs) become increasingly common and competent, non-expert users can pose risks in everyday interactions, prompting extensive research into jailbreak attacks. However, most existing black-box jailbreak attacks rely on hand-crafted heuristics or narrow search spaces, which limit automation and scalability. Compared with prior attacks, we propose Game-Theory Attack (GTA), an automatable and scalable black-box jailbreak framework. Concretely, we formalize the attacker's interaction against safety-aligned LLMs as a finite-horizon, early-stoppable sequential stochastic game, and reparameterize the LLM's randomized outputs via quantal response. Building on this, we introduce a behavioral conjecture “template-over-safety flip”: by reshaping the LLM's effective objective through game-theoretic scenarios, the originally safety preference may become maximizing scenario payoffs within the template, which weakens safety constraints in specific contexts. We validate this mechanism with classical game templates such as the disclosure variant of the Prisoner's Dilemma, and we further introduce an Attacker Agent that adaptively escalates pressure to increase the attack success rate (ASR). Experiments spanning multiple protocols and datasets show that GTA achieves over 95% ASR on LLMs such as GPT-4o and Deepseek-R1, while using fewer queries per successful attack than existing multi-round attacks. Ablations over components, decoding, multilingual settings, and the Agent's core model confirm effectiveness and generalization. Moreover, scenario scaling studies further establish scalability. GTA also attains high ASR on other game-theoretic scenarios (e.g., the Dollar Auction), and one-shot LLM-generated variants that keep the model mechanism fixed while varying background achieve comparable ASR. Paired with an optional Harmful-Words Detection Agent that performs word-level insertions, GTA maintains high ASR while lowering detection under prompt-guard models. Beyond benchmarks, GTA jailbreaks real-world LLM applications and reports a longitudinal safety monitoring of popular HuggingFace LLMs, with average ASR above 86%. Overall, GTA enables automated and scalable black-box red teaming, supporting broader, more efficient, and more robust safety testing of deployed LLMs.  
 
 <p align="center">
@@ -13,6 +10,10 @@ This is the official code repository for the paper **"To Survive, I Must Defect"
 <p align="center">
   <em>Overview of the proposed Game-Theory Attack (GTA) framework.</em>
 </p>
+
+> ⚠️ **Research & Safety Notice**  
+> This repository is provided **for research, red-teaming, and harmful content**. Do not deploy for misuse or to intentionally circumvent safety systems in production models.
+
 ---
 
 ## Table of Contents
