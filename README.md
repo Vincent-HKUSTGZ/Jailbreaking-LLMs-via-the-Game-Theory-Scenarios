@@ -48,13 +48,6 @@
   - `eval_method_1()` → **ASR_1** template.  
   - `eval_method_2()` → **ASR_2** template.
 
-- `successed_cases/`  
-  Examples of successful jailbreaks (**3 cases, 6 files total**).  
-  Each case includes a `.json` file (full prompts + dialog traces, e.g., `case1.json`) and a matching `.md` summary.
-
-- `Huggingface_Model/`  
-  The full set of Hugging Face models used in our tests **from January to September**, together with their **ASR_1 & ASR_2** results.
-
 - `Harmful-Word_Detection_Agent/`  
   Our design and implementation of the **Harmful-Word Detection Agent**.
 
@@ -63,7 +56,7 @@
 ## Installation
 
 ```bash
-cd Game_Theory_Attack
+cd Jailbreaking-LLMs-via-the-Game-Theory-Scenarios
 
 # Create environment
 conda create -n gta python=3.10 -y
