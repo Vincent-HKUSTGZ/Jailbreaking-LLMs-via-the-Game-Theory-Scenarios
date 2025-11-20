@@ -13,7 +13,6 @@ This is the official code repository for the paper **"To Survive, I Must Defect"
 
 > ⚠️ **Research & Safety Notice**  
 > This repository is provided **for research, red-teaming, and harmful content**. Do not deploy for misuse or to intentionally circumvent safety systems in production models.
-
 ---
 
 ## Table of Contents
