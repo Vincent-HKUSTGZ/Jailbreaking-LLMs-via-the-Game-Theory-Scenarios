@@ -78,9 +78,6 @@ pip install -r requirements.txt
 ```bash
 # Attack gemini-2.0-flash-lite-001 using gpt-4o-mini as attacker
 python jailbreak.py --rounds 5 --output_dir results/gemini-2.0-flash-lite-001 --attack --target1 gemini --target2 gemini --attacker gpt-4o-mini --attack_type ours
-
-# Attack llama3.1-405b using gpt-4o-mini as attacker
-python jailbreak.py --rounds 5 --output_dir results/llama3.1-405b --attack --target1 llama3.1-405b --target2 llama3.1-405b --attacker gpt-4o-mini --attack_type ours
 ```
 
 **Common flags**
