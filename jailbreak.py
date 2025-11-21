@@ -37,8 +37,8 @@ def main():
     parser.add_argument('--attack_type', type=str, default="no_attack", required=False, help='Attack type')
     args = parser.parse_args()
     
-    # # Run batch attack tests
-    # run_attacks(args.rounds, args.output_dir, args.target1, args.target2, args.attacker, args.attack_type)
+    # Run batch attack tests
+    run_attacks(args.rounds, args.output_dir, args.target1, args.target2, args.attacker, args.attack_type)
     
     from eval import evaluate_conversations
     evaluate_conversations(args.output_dir)
